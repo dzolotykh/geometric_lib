@@ -14,6 +14,7 @@ class TestRectangle(unittest.TestCase):
         self.assertAlmostEqual(perimeter(0, 0), 0)
         self.assertAlmostEqual(perimeter(0, 5.5), 0)
         self.assertAlmostEqual(perimeter(5.5, 5.5), 22)
+        self.assertAlmostEqual(perimeter(5.5, 0), 0)
 
         self.assertRaises(ValueError, perimeter, -1, -1)
 
