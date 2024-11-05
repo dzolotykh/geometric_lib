@@ -30,6 +30,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install pytest
 
-    - name: Run tests
+    - name: Run tests on ubuntu-latest
+      if: runner.os == 'ubuntu-latest'
       run: |
-        pytest tests
+        export PYTHONPATH=. && pytest tests
+    
+    - name: Run tests on windows-latest
+      if: runner.os == 'windows-latest'
+      run: |
+        set PYTHONPATH=. && pytest tests
