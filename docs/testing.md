@@ -1,4 +1,4 @@
-У каждого вида объектов (`circle`, `rectangle`, `triangle`, `square`) были протестированы методы `area` и `perimeter`.
+У каждого вида объектов ([`circle`](../src/circle.py), [`rectangle`](../src/rectangle.py), [`triangle`](../src/triangle.py), [`square`](../src/square.py)) были протестированы методы `area` и `perimeter`.
 
 Ниже приведена неполная таблица тестов для каждого объекта, отображающая поведение на различных входных данных:
 

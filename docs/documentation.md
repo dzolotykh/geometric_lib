@@ -67,7 +67,7 @@ from triangle import perimeter
 perimeter(3, 4, 5) # 12
 ```
 
-### Список коммитов:
+#### Список коммитов:
 ```shell
 a4ba3b0 (HEAD -> new_features_439609, origin/new_features_439609) add triangle & fix rectangle
 d402c07 add rectangle.py
