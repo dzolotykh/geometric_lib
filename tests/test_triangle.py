@@ -27,7 +27,7 @@ class TestTriangle(unittest.TestCase):
                 self.assertRaises(TypeError, area, a, b)
     
     def test_wrong_types_perimeter(self):
-        params = [(1, '2', 3), ([1], '2', 2), (1, 2, None)]
+        params = [(1, '2', 3), ([1], '2', 2), (1, 2, None), ('1', '1', '1')]
         for a, b, c in params:
             with self.subTest(a=a, b=b, c=c):
                 self.assertRaises(TypeError, perimeter, a, b, c)
