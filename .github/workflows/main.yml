@@ -33,7 +33,7 @@ jobs:
     - name: Run tests on ubuntu-latest
       if: runner.os == 'Linux'
       run: |
-        export PYTHONPATH=. && pytest tests
+        python -m pytest tests
     
     - name: Run tests on windows-latest
       if: runner.os == 'Windows'
